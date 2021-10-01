@@ -1,0 +1,227 @@
+
+// theme switcher toggler design
+* {
+    .theme-toggle {
+
+        font-size: 10px;
+
+        p {
+            margin-right: 20px;
+        }
+
+        .shape {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translateY(-5.3px);
+            margin-left: 54px;
+            z-index: -1;
+        }
+
+        .shape:nth-of-type(2) {
+            margin-left: 58px;
+            border-radius: 0%;
+            width: 66px;
+            height: 24px;
+            border-radius: 20%;
+            transform: translateY(-4.4px);
+        }
+
+        .shape:nth-of-type(3) {
+            margin-left: 102px;
+        }
+
+        .radio {
+
+            display: inline-flex;
+            cursor: pointer;
+
+            &::before {
+                display: block;
+                position: absolute;
+                transform: translateY(-20px);
+                margin-left: 3px;
+            }
+
+            &:nth-of-type(1)::before {
+                content: "1";
+            }
+
+            &:nth-of-type(2)::before {
+                content: "2";
+            }
+
+            &:nth-of-type(3)::before {
+                    content: "3";
+            }
+
+            &__input {
+                display: none;
+            }
+    
+            &__radio {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+    
+            &__radio::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                transform: scale(0);
+            }
+
+            .radio__input:checked + .radio__radio::after {
+                transform: scale(1);
+            }
+        }
+
+    }
+
+}
+
+// theme one 
+html[data-theme="theme-one"] {
+
+    body {
+        background: $veryDarkDesaturatedBlueBg;
+    }
+
+    .shape {
+        background: $veryDarkDesaturatedBlueT;
+    }
+
+    .radio__radio::after {
+        background: $red;
+    }
+
+    #header, #display, #stack {
+        color: $white;
+    }
+
+    #screen {
+        background: $veryDarkDesaturatedBlueSbg;
+    }
+
+    #keypad {
+        background: $veryDarkDesaturatedBlueT;
+
+        .key {
+            background: $lightGrayishOrange;
+            box-shadow: 0px 6px 0px -2px $grayishOrange;
+        }
+
+        #reset, #delete {
+            background: $desaturatedDarkBlueKbg;
+            color: $white;
+            box-shadow: 0px 6px 0px -2px $desaturatedDarkBlueKs;
+        }
+
+        #equal {
+            color: $white;
+            background: $red;
+            box-shadow: 0px 6px 0px -2px $darkRed;
+        }
+    }
+}
+
+// theme two 
+html[data-theme="theme-two"] {
+
+    body {
+        background: #e6e6e6;
+    }
+
+    .shape {
+        background: #d3cdcd;
+    }
+
+    .radio__radio::after {
+        background: $red;
+    }
+
+    #header, #display, #stack {
+        color: black;
+    }
+
+    #screen {
+        background: #eeeeee;
+    }
+
+    #keypad {
+        background: #d3cdcd;
+
+        .key {
+            background: $lightGrayishOrange;
+            box-shadow: 0px 6px 0px -2px $grayishOrange;
+        }
+
+        #reset, #delete {
+            background: #378381;
+            color: $white;
+            box-shadow: 0px 6px 0px -2px #1a5d66;
+        }
+
+        #equal {
+            color: $white;
+            background: #c85401;
+            box-shadow: 0px 6px 0px -2px #863700;
+        }
+    }
+}
+
+// theme three
+html[data-theme="theme-three"] {
+
+    body {
+        background: #17062a;
+    }
+
+    .shape {
+        background: #1e0836;
+    }
+
+    .radio__radio::after {
+        background: #00decf;
+    }
+
+    #header, #display, #stack, .key {
+        color: #ffe744;
+    }
+
+    #screen {
+        background: #1e0836;
+    }
+
+    #keypad {
+        background: #1e0836;
+
+        .key {
+            background: #331b4d;
+            box-shadow: 0px 6px 0px -2px #812594;
+        }
+
+        #reset {
+            color: $white;
+            background: #56077a;
+            box-shadow: 0px 6px 0px -2px #bf15f4;
+        }
+
+        #equal {
+            color: black;
+            background: #00decf;
+            box-shadow: 0px 6px 0px -2px #6df9f0;
+        }
+
+        #delete {
+            color: $white;
+            background: #56077c;
+            box-shadow: 0px 6px 0px -2px #bc16f4;
+        }
+    }
+}

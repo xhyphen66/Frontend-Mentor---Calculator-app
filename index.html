@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="theme-one">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS-->
+  <link rel="stylesheet" href="dist/css/main.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <main id="main" class="flex-c at-c jc-c">
+    <div id="header" class="flex-r">
+      <h1>calc</h1>
+      <div class="theme-toggle flex-r">
+        <p>THEME</p>
+        <span class="shape"></span>
+        <span class="shape"></span>
+        <span class="shape"></span>
+        <label for="theme-one" class="radio at-c">
+
+          <input type="radio" name="theme" id="theme-one" class="radio__input" checked>
+          <div class="radio__radio"></div>
+        </label>
+        <label for="theme-two" class="radio">
+
+          <input type="radio" name="theme" id="theme-two" class="radio__input">
+          <div class="radio__radio"></div>
+        </label>
+        <label for="theme-three" class="radio">
+
+          <input type="radio" name="theme" id="theme-three" class="radio__input">
+          <div class="radio__radio"></div>
+        </label>
+      </div>
+    </div>
+    <div id="screen" class="flex-c at-c jc-c">
+      <div id="display"></div>
+      <div id="stack"></div>
+    </div>
+    <div id="keypad" class="flex-c at-c">
+      <div id="first-row" class="flex-r at-c">
+        <button id="seven" class="key" data-number>7</button>
+        <button id="eight" class="key" data-number>8</button>
+        <button id="nine" class="key" data-number>9</button>
+        <button id="delete" class="key" data-deletebtn>DEL</button>
+      </div>
+      <div id="second-row" class="flex-r at-c">
+        <button id="four" class="key" data-number>4</button>
+        <button id="five" class="key" data-number>5</button>
+        <button id="six" class="key" data-number>6</button>
+        <button id="plus" class="key" data-operation>+</button>
+      </div>
+      <div id="third-row" class="flex-r at-c">
+        <button id="one" class="key" data-number>1</button>
+        <button id="two" class="key" data-number>2</button>
+        <button id="three" class="key" data-number>3</button>
+        <button id="minus" class="key" data-operation>-</button>
+      </div>
+      <div id="fourth-row" class="flex-r at-c">
+        <button id="point" class="key" data-number>.</button>
+        <button id="zero" class="key" data-number>0</button>
+        <button id="divide" class="key" data-operation>/</button>
+        <button id="multi" class="key" data-operation>x</button>
+      </div>
+      <div id="fifth-row" class="flex-r at-c">
+        <button id="reset" class="key" data-reset>RESET</button>
+        <button id="equal" class="key" data-equals>=</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS Script -->
+  <script src="index.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

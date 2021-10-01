@@ -1,0 +1,25 @@
+
+* {
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    .flex-c {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-r {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .at-c {
+        align-items: center;
+    }
+
+    .jc-c {
+        justify-content: center;
+    }
+}
