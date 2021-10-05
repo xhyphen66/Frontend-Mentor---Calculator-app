@@ -17,11 +17,6 @@ Users should be able to:
 ![theme two](screenshots/theme-two.png)
 ![theme three](screenshots/theme-three.png)
 
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-
 ### Built with
 
 - Semantic HTML5 markup
